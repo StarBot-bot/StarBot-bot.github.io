@@ -1,116 +1,124 @@
 <!DOCTYPE html>
-<html lang="en" style="height: 100%; width: 100%">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <title>StarBot</title>
-
-    <!-- COPYRIGHT VERIFY -->
-    <meta name="copyrighted-site-verification" content="271c10770f16902c" />
-    <meta name="keywords" content="discord, damferr, starbot, discordbot">
-    <meta name="viewport" content="width=device-width,initial-scale=1, shrink-to-fit=no">
-    <!-- WEBSITE ICON -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/now-ui-kit.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="icon" href="https://i.postimg.cc/CMkz5fhX/pfpweb.png" type="image/icon type">
-
-    <meta property="og:site_name" content="StarBot">
-    <meta content="StarBot | A Discord Bot with Fun, Moderation and Utility commands. The bot does not have a dashboard..." property="og:description">
-    <meta content="https://i.postimg.cc/CMkz5fhX/pfp.png" property="og:image">
-    <meta name="theme-color" content="#A1C240">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css"/>
-    <link rel="stylesheet" href="./assets/css/cmds.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>StarBot</title>
 </head>
 
-<body class="bg-black muli">
-    <style>
-		 #preloader {
-			 position: fixed;
-			 left: 0;
-			 top: 0;
-			 z-index: 9999999;
-			 width: 100%;
-			 height: 100%;
-			 overflow: hidden;
-			 background: #303030 url(https://i.postimg.cc/CMkz5fhX/pfpweb.png) no-repeat center center;
-			 color: #303030;
-		 }
-    </style>
-    <div id="preloader"></div>
-
-    <ul class="topnav">
-      <li><a href="#commands">Commands</a></li>
-      <li><a href="https://discord.com/api/oauth2/authorize?client_id=881871344613068830&permissions=8&scope=bot%20applications.commands" target="_blank">Invite</a></li>
-      <li><a href="https://dsc.gg/starbotsupport" target="_blank">Support</a></li>
-    </ul>
-
-    <center><div class="header">
-      <br>
-      <img src="https://i.postimg.cc/CMkz5fhX/pfpweb.png" style="height: 170px;"></img>
-      <br><br>
-      <p style="font-size: 25px;"><strong>StarBot</strong> is a high quality bot<br>The right bot for your discord!<br><font style="font-size: 23px;">Raiting <font color="orange">5/5 ★★★★★</font></font></p>
-      <br>
-      <a href="https://discord.com/api/oauth2/authorize?client_id=881871344613068830&permissions=8&scope=bot%20applications.commands" target="_blank" class="button">Invite StarBot</a>
-      <a href="https://dsc.gg/starbotsupport" target="_blank" class="button">Join Support Server</a>
-      </a>
-    </div></center>
-
-    <section id="commands">
-      <div> <!-- style="margin-top: 50px"-->
-          <div class="section">
-              <img src="https://i.imgur.com/FXtk1bQ.png" class="sectionImg">
-              <div class="sectionDesc">
-                  <span style="color: orange; font-weight: bold; font-size: 2rem; margin-bottom: 5px">Moderation</span>
-                  <p style="font-size: 1rem;">StarBot has simple moderation commands.<br>
-                      You can easily kick or ban an user.<br>
-			  You can purge messages too.
-                  </p>
-              </div>
-          </div>
-          <br>
-          <div class="section">
-              <img src="https://i.imgur.com/Qzdxe5j.png" class="sectionImg">
-              <div class="sectionDesc">
-                  <span style="color: orange; font-weight: bold; font-size: 2rem; margin-bottom: 5px">Utility</span>
-                  <p style="font-size: 1rem;">StarBot has utility commands such as serverinfo, userinfo and has an embed<br>
-                    command that generates and embed based on your preferences. With the weather command,<br>
-			  you can see weather information about places all around the world.
-                  </p>
-              </div>
-          </div>
-          <br>
-          <div class="section">
-              <img src="https://i.imgur.com/RKTNgqJ.png" class="sectionImg">
-              <div class="sectionDesc">
-                  <span style="color: orange; font-weight: bold; font-size: 2rem; margin-bottom: 5px">Fun</span>
-                  <p style="font-size: 1rem;">StarBot has fun commands such as<br>
-                      airpods, cat, dog, food and meme.<br>
-			  He has commands like number, gayrate, simprate and lenny too.
-                  </p>
-              </div>
-          </div>
-      </div>
+<body>
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="assets/menuIcon.svg" width="20px" height="20px" style="max-width: none !important;">
+            </button>
+            <img src="https://i.postimg.cc/CMkz5fhX/pfpweb.png" href="https://starbot.tk/" width="50" height="50">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 20px !important">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="https://starbot.tk/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link"
+                            href="https://discord.com/api/oauth2/authorize?client_id=881871344613068830&permissions=8&scope=bot%20applications.commands">Invite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link" href="https://dsc.gg/starbotsupport">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" class="nav-link"
+                            href="https://discordbotlist.com/bots/starbot-9848/upvote">Vote</a>
+                    </li>
+                </ul>
+                </ul>
+            </div>
+            <div class="nav-item">
+        </nav>
+        <div class="heading">
+            <h1 class="display-5 title">StarBot</h1>
+            <p class="subtitle">StarBot is a fun, utility and moderation Discord bot<br />that uses only slash commands.
+            </p>
+            <a class="btn btn-primary btn-lg"
+                href="https://discord.com/api/oauth2/authorize?client_id=881871344613068830&permissions=8&scope=bot%20applications.commands"
+                target="_blank" role="button">Add to server</a>
+            <a class="btn btn-secondary btn-lg" href="https://discordbotlist.com/bots/starbot-9848/upvote"
+                target="_blank" role="button">Vote</a>
+            <br /><br /><br /><br /><br /><br />
+        </div>
+    <section id="features">
+        <div class="features">
+            <div class="title">Features</div>
+            <div class="subtitle">Here are all the features of StarBot</div>
+            <div class="cards">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Fun</h5>
+                        <p class="card-text">There are loads of fun commands like meme, dog, cat, airpods, lenny and
+                            more! Use gayrate and simprate on other users to make the bot rate them! When using the
+                            number command, the bot will generate a random number from 1 to 10 000 and send it!</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Utility</h5>
+                        <p class="card-text">There's a cool command named weather that shows you current weather
+                            information about places all around the world! Then commands like embed (generates an
+                            embed), serverinfo(shows info about the server) and userinfo(shows info about an user).</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Moderation</h5>
+                        <p class="card-text">StarBot has simple moderation commands such as ban that bans an user from
+                            the server with a reason! The bot has a kick command too. There's an useful command named
+                            purge that deletes an amount of messages (up to 100)!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-    <script src="./assets/js/script.js"></script>
-    <script src="./assets/js/type.js"></script>
-    <script>
-      function darkMode() {
-         var element = document.body;
-         element.classList.toggle("white-mode");
-      }
-    </script>
-
-   <br><br><center>Made by <a href="https://github.com/DamFerr">DamFerr</a></center>
-   <center>Template by <a href="https://github.com/xHyroM">Hyro</a></center>
+    <div class="page_end">
+        <div class="start">
+            <div class="card">
+                <div class="card-body gs-card">
+                    <div class="title">Ready to try StarBot?</div>
+                    <br />
+                    <a class="btn btn-primary btn-lg"
+                        href="https://discord.com/api/oauth2/authorize?client_id=881871344613068830&permissions=8&scope=bot%20applications.commands"
+                        role="button">Invite StarBot Here!</a>
+                </div><br />
+            </div>
+        </div>
+        <div class="footer">
+            <div class="bot-footer">
+                <img src="" href="https://starbot.tk/" width="150">StarBot<br />
+                Copyright © StarBot - 2021
+            </div><br />
+            <div class="nouridio">website made by <a href="https://damferr.xyz"> damferr</a></div><br />
+            <div class="nouridio">website template by <a href="https://nouridio.com"> nouridio</a></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/now-ui-kit.min.js"></script>
 </body>
 
 </html>
